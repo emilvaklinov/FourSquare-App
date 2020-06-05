@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		48752BD82486779600AF98A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48752BD62486779600AF98A4 /* Main.storyboard */; };
 		48752BDA2486779800AF98A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48752BD92486779800AF98A4 /* Assets.xcassets */; };
 		48752BDD2486779800AF98A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48752BDB2486779800AF98A4 /* LaunchScreen.storyboard */; };
+		48752BE5248A5A7E00AF98A4 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48752BE4248A5A7E00AF98A4 /* PlacesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		48752BD92486779800AF98A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48752BDC2486779800AF98A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48752BDE2486779800AF98A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48752BE4248A5A7E00AF98A4 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		508F2E5752CCADA42E5FD61D /* Pods_FourSquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourSquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				48752BD22486779600AF98A4 /* SceneDelegate.swift */,
 				48752BD42486779600AF98A4 /* ViewController.swift */,
 				48752BD62486779600AF98A4 /* Main.storyboard */,
+				48752BE4248A5A7E00AF98A4 /* PlacesVC.swift */,
 				48752BD92486779800AF98A4 /* Assets.xcassets */,
 				48752BDB2486779800AF98A4 /* LaunchScreen.storyboard */,
 				48752BDE2486779800AF98A4 /* Info.plist */,
@@ -88,7 +91,6 @@
 				15E8E566598D90AB2D7A1C2E /* Pods-FourSquare.debug.xcconfig */,
 				4616309A19D1F1357021F09F /* Pods-FourSquare.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +211,7 @@
 			files = (
 				48752BD52486779600AF98A4 /* ViewController.swift in Sources */,
 				48752BD12486779600AF98A4 /* AppDelegate.swift in Sources */,
+				48752BE5248A5A7E00AF98A4 /* PlacesVC.swift in Sources */,
 				48752BD32486779600AF98A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
