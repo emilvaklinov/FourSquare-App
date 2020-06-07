@@ -10,7 +10,7 @@ import UIKit
 import Parse
 
 
-class ViewController: UIViewController {
+class SignUpVC: UIViewController {
 
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
