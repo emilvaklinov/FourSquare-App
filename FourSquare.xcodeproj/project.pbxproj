@@ -16,6 +16,7 @@
 		48752BDD2486779800AF98A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48752BDB2486779800AF98A4 /* LaunchScreen.storyboard */; };
 		48752BE5248A5A7E00AF98A4 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48752BE4248A5A7E00AF98A4 /* PlacesVC.swift */; };
 		48752BE7248E23BD00AF98A4 /* AddPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48752BE6248E23BD00AF98A4 /* AddPlaceVC.swift */; };
+		48752BE9248E25FC00AF98A4 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48752BE8248E25FC00AF98A4 /* MapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		48752BDE2486779800AF98A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48752BE4248A5A7E00AF98A4 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		48752BE6248E23BD00AF98A4 /* AddPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceVC.swift; sourceTree = "<group>"; };
+		48752BE8248E25FC00AF98A4 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		508F2E5752CCADA42E5FD61D /* Pods_FourSquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourSquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				48752BD22486779600AF98A4 /* SceneDelegate.swift */,
 				48752BD42486779600AF98A4 /* SignUpVC.swift */,
 				48752BD62486779600AF98A4 /* Main.storyboard */,
+				48752BE8248E25FC00AF98A4 /* MapVC.swift */,
 				48752BE6248E23BD00AF98A4 /* AddPlaceVC.swift */,
 				48752BE4248A5A7E00AF98A4 /* PlacesVC.swift */,
 				48752BD92486779800AF98A4 /* Assets.xcassets */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48752BD52486779600AF98A4 /* SignUpVC.swift in Sources */,
+				48752BE9248E25FC00AF98A4 /* MapVC.swift in Sources */,
 				48752BD12486779600AF98A4 /* AppDelegate.swift in Sources */,
 				48752BE5248A5A7E00AF98A4 /* PlacesVC.swift in Sources */,
 				48752BE7248E23BD00AF98A4 /* AddPlaceVC.swift in Sources */,
