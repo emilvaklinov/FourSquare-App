@@ -8,6 +8,11 @@
 
 import UIKit
 
+//var globalName = ""
+//var globalType = ""
+//var globalAtmosphere = ""
+
+
 class AddPlaceVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var placeNameText: UITextField!
@@ -25,7 +30,27 @@ class AddPlaceVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     }
     
     @IBAction func nextButtonClicked(_ sender: Any) {
-        self.performSegue(withIdentifier: "toMapVC", sender: nil)
+        
+        if placeNameText.text != "" && placeTypeText.text != "" && placeAtmosphereText.text != "" {
+            if let chooseImage = placeImageView.image {
+                let placeMopdel = PlaceModel.sharedInstance
+                placeMopdel.placeName = placeNameText.text!
+                placeMopdel.placeType = placeTypeText.text!
+                placeMopdel.placeAtmotphere = placeAtmosphereText.text!
+                placeMopdel.placeImage = chooseImage
+            }
+            self.performSegue(withIdentifier: "toMapVC", sender: nil)
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Place Name/Type/Atmosphere ??", preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+            alert.addAction(okButton)
+            present(alert, animated: true, completion: nil)
+        }
+        
+
+        
+        
+        
         
     }
     
