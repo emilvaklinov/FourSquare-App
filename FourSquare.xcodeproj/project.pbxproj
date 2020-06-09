@@ -83,18 +83,42 @@
 			children = (
 				48752BD02486779600AF98A4 /* AppDelegate.swift */,
 				48752BD22486779600AF98A4 /* SceneDelegate.swift */,
+				48752BD92486779800AF98A4 /* Assets.xcassets */,
+				48752BDE2486779800AF98A4 /* Info.plist */,
+				48752BEE248FBC7200AF98A4 /* Controller */,
+				48752BF0248FBCAD00AF98A4 /* View */,
+				48752BEF248FBC8B00AF98A4 /* Model */,
+			);
+			path = FourSquare;
+			sourceTree = "<group>";
+		};
+		48752BEE248FBC7200AF98A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				48752BD42486779600AF98A4 /* SignUpVC.swift */,
-				48752BD62486779600AF98A4 /* Main.storyboard */,
 				48752BEA248E304100AF98A4 /* DetailsVC.swift */,
 				48752BE8248E25FC00AF98A4 /* MapVC.swift */,
 				48752BE6248E23BD00AF98A4 /* AddPlaceVC.swift */,
-				48752BEC248E985F00AF98A4 /* PlaceModel.swift */,
 				48752BE4248A5A7E00AF98A4 /* PlacesVC.swift */,
-				48752BD92486779800AF98A4 /* Assets.xcassets */,
-				48752BDB2486779800AF98A4 /* LaunchScreen.storyboard */,
-				48752BDE2486779800AF98A4 /* Info.plist */,
 			);
-			path = FourSquare;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48752BEF248FBC8B00AF98A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48752BEC248E985F00AF98A4 /* PlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48752BF0248FBCAD00AF98A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48752BD62486779600AF98A4 /* Main.storyboard */,
+				48752BDB2486779800AF98A4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CCF99D0633D48693DCE32322 /* Pods */ = {
