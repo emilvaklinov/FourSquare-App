@@ -139,7 +139,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jdu-dn-PyK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jdu-dn-PyK">
                                 <rect key="frame" x="45" y="15" width="285" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jdu-dn-PyK" secondAttribute="height" multiplier="1:1" constant="29" id="SiF-nS-H9Z"/>
