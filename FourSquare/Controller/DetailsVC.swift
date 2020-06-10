@@ -24,16 +24,59 @@ class DetailsVC: UIViewController {
     
     
     var choosenPlaceId = ""
+    var chosenLatitude = Double()
+    var chosenLogitude = Double()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getDataFromParse()
+    }
+    
+    func getDataFromParse() {
         let query = PFQuery(className: "Places")
         query.whereKey("objectId", equalTo: choosenPlaceId)
         query.findObjectsInBackground { (objects, error) in
             if error != nil {
                 
             } else {
-                print(objects)
+                if objects != nil {
+                    if objects!.count > 0 {
+                        let choosenPlaceObject = objects![0]
+                        
+                        if let placeName = choosenPlaceObject.object(forKey: "name") as? String {
+                            self.detailsNameLabel.text = placeName
+                        }
+                        if let placeType = choosenPlaceObject.object(forKey: "type") as? String {
+                            self.detailsTypeLabel.text = placeType
+                        }
+                        if let placeAtmosphere = choosenPlaceObject.object(forKey: "atmosphere") as? String {
+                            self.detailsAtmosphereLabel.text = placeAtmosphere
+                        }
+                        
+                        if let placeLatitude = choosenPlaceObject.object(forKey: "latitude") as? String {
+                            if let placeLatitudeDouble = Double(placeLatitude){
+                              self.chosenLatitude = placeLatitudeDouble
+                            }
+                        }
+                        if let placeLongitude = choosenPlaceObject.object(forKey: "longitude") as?
+                            String {
+                            if let placeLongitudeDouble = Double(placeLongitude) {
+                                self.chosenLogitude = placeLongitudeDouble
+                            }
+                        }
+                        // Downloading the image
+                        if let imageData = choosenPlaceObject.object(forKey: "image") as? PFFileObject {
+                            imageData.getDataInBackground {(data, error) in
+                                if error == nil {
+                                    if data != nil {
+                                        self.detailsImageView.image = UIImage(data: data!)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
